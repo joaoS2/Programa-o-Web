@@ -1,0 +1,33 @@
+Programação Web- Aula 3
+
+Etapa 1-Estrutura sequêncial: Existe um único fluxo;
+Operadores: +(adição), -(subtração), *(multiplicação) e /(divisão)
+
+Etapa 2-Estrutura condicional: Dois ou mais fluxos 
+(if/else);
+EXEMPLO:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>|Exemplo 1|</title>
+</head>
+<body>
+    <script>
+        //verifique se o número é positivo ou negativo
+        var num = Number(prompt("Insira um número diferente de 0: "))
+            if (num > 0 ){
+                window.alert("O número inserido é positivo!")
+            }
+            else if(num < 0){
+                window.alert("O múmero inserido é negativo!")
+            }
+            else{
+                window.alert("O número é neutro, ou seja, 0!")
+            }
+    </script>
+</body>
+</html>

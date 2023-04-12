@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Atividade</title>
+    </head>
+    <body>
+        <h1>Respostas da questões :c </h1>
+        <script>
+            //1. Faça uma página web que converta metros para centímetros
+            var metros = Number.parseFloat(prompt("Insira uma medida em metros: "))
+            var cm = metros * 100 //transformar metros para cm
+            //|imprimindo na página|
+            document.write("1̣─" , metros," m convertidos para céntimetros é " , cm + " cm")
+            document.write("<br>")
+
+            //2. Faça uma página web que calcule a área de um quadrado, em seguida mostre o dobro desta área para o usuário.
+            var quadrado = Number(prompt("Insira a largura do quadrado: "))
+            var areaQuadrado = quadrado * quadrado //calculando a area do quadrado (a²)
+            var dobroArea = areaQuadrado * 2 //calculando o dobro da are do quadrado (a*2)
+            //|imprimindo na página|
+            document.write("2─ A área de um quadrado é " , areaQuadrado + ". Já o seu dobro é " , dobroArea)
+            document.write("<br>")
+
+            //3. Faça uma página web que pergunte quanto você ganha por hora e o número de horas trabalhadas no mês.
+            //Calcule e mostre o total do seu salário no referido mês.
+            var ganhoHora = Number(prompt("Insira o quanto vc ganha por hora trabalhada: "))
+            var horaTrabalhada = Number(prompt("Insira o quanto vc ganha por hora trabalhada no mês: "))
+            var salTotal = ganhoHora * horaTrabalhada //calculando as horas trabalhadas 
+            //|imprimindo na página|
+            document.write("3─ O seu salário no mês é R$ ", salTotal + ",00")
+            document.write("<br>")
+
+            //4. Faça uma página web que peça a temperatura em graus Farenheit, transforme e mostre a temperatura em graus Celsius.
+            var temperaturaF = Number(prompt("Insira uma temperatuda em Graus Farenheit: "))
+            var temperatudaC = (temperaturaF - 32)/1.8 // convertendo Farenheit para Celcius 
+            //|imprimindo na página|
+            alert("4─" , temperatudaF," Graus Farenheit convertidos para Graus Celcius é ", temperatudaC + " cº")
+            document.write("<br>")
+            
+            //5. Faça uma página web que peça 2 números inteiros e um número real. Calcule e mostre:
+            //a) o produto do dobro do primeiro com metade do segundo .
+            //b) a soma do triplo do primeiro com o terceiro.
+            //c) o terceiro elevado ao cubo.
+            var numInteiro = Number.parseInt(prompt("Insira um número inteiro: "))
+            var numInteiro2 = Number.parseInt(prompt("Insira um número inteiro: "))
+            var numReal = Number.parseInt(prompt("Insira um número real: "))
+            //calculos:
+            var letraA = numInteiro * 2 * (numInteiro2 / 2) 
+            var letraB = numInteiro * 3 + numReal
+            var letrC = numReal * numReal * numReal
+            //|imprimindo na página|
+            document.write("5─ ")
+            document.write("<br>")
+            document.write("a)o produto do dobro do primeiro com metade do segundo é ", letraA)
+            document.write("b) a soma do triplo do primeiro com o terceiro é ", letraB)
+            document.write("c) o terceiro elevado ao cubo é ", letraC)
+            document.write("<br>")
+            
+            //6. Tendo como dados de entrada a altura de uma pessoa, construa uma página web que calcule seu peso ideal,
+            //usando a seguinte fórmula: (72.7*altura) - 58.
+            var altura = Number(prompt("Insira a sua altura: "))
+            //|imprimindo na página|
+            var pesoIdeal = (72.7 * altura) - 58 //calculo da fórmula do peso ideal
+            //|imprimindo na página|
+            document.write("6─ O se pezo ideal é " , pesoIdeal)
+            document.write("<br>")
+            
+            //7. Faça um Programa que peça a temperatura em graus Celsius, transforme e mostre em graus Farenheit
+            var temperaturaC2 = Number(prompt("Insira uma temperatuda em Graus Celcius: "))
+            var temperatudaF2 = (temperaturaF2 * 1.8) + 32 // convertendo Farenheit para Celcius 
+            //|imprimindo na página|
+            document.write("7─" , temperaturaC2," Graus Celcius convertidos para Graus Farenheit  é ",temperatudaF)
+            document.write("<br>")
+
+            //8. Faça uma página web que peça o raio de um círculo, calcule e mostre sua área.
+            var circulo = Number(prompt("Insira o diametro do círculo: "))
+            var raio = circulo / 2
+            //|imprimindo na página|
+            document.write("8─ A área do círculo é ", raio)
+            document.write("<br>")
+
+            //9. Faça uma página web que peça as 4 notas bimestrais e mostre a média.
+            var nota1 = Number(prompt("Insira uma nota: "))
+            var nota2 = Number(prompt("Insira uma nota: "))
+            var nota3 = Number(prompt("Insira uma nota: "))
+            var nota4 = Number(prompt("Insira uma nota: "))
+            var media = nota1 + nota2 + nota3 + nota4 / 4
+            //|imprimindo na página|
+            document.write("9─ A média das notas é ", media)
+            document.write("<br>")
+
+            //10. Faça uma página web que peça dois números e imprima a soma
+            var num1 = Number(prompt("Insira um número: "))
+            var num2 = Number(prompt("Insira um número: "))
+            var soma = num1 + num2 
+            //|imprimindo na página|
+            document.write("10─ A soma de ", num1 + " com ", num2 + " é ", soma)
+            document.write("<br>")
+    </script>
+
+
+</body>
+</html>

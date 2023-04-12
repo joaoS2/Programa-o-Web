@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 7</title>
+</head>
+<body>
+    <script>
+        //crie um programa que leia o bome e a idade de 5 pessoasaa 
+        //e imprima o nome da pessoas mais velha usando uma estrutura de repetição
+
+        var nomeMaisVelho;
+        var idadeMaisVelho = 0;
+
+        for (let i = 1; i <= 5; i++) {
+            let nome = prompt(`Digite o nome da ${i}ª pessoa:`);
+            let idade = Number(prompt(`Digite a idade da ${i}ª pessoa:`));
+
+        if (idade > idadeMaisVelho) {
+            nomeMaisVelho = nome;
+            idadeMaisVelho = idade;
+        }
+        }
+
+    alert(`A pessoa mais velha é p ${nomeMaisVelho}, com ${idadeMaisVelho} anos.`);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 3</title>
+</head>
+<body>
+<script>
+        //Faça um programa que leia a idade de 5 pessoas
+        //imprima a média das idades usando a estrutura de repetição do...while
+
+        var idade;
+        soma = 0;
+        i = 0;
+        do {
+        i++;
+        idade = parseInt(prompt(`Digite a idade da pessoa ${i}:`));
+        soma += idade;
+
+        } 
+        while (i < 5){
+        
+        const media = soma / 5;
+        alert(`A média das idades é ${media}.`);
+        }
+</script>
+</body>
+</html>

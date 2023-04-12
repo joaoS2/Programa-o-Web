@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qeustão 01</title>
+</head>
+<body>
+    <script>
+        //1. Escreva um algoritmo que leia o número de identificação, as 3 notas obtidas por um aluno nas 3 verificações e a média dos exercícios que fazem parte da avaliação, 
+        //e calcule a média de aproveitamento, usando a fórmula:
+        //M = (nota1 + nota 2 * 2 + nota 3 * 3 + ME) / 7
+        //A atribuição dos conceitos obedece a tabela abaixo. O algoritmo deve escrever o número do aluno, suas notas, a média dos exercícios,
+        //a média de aproveitamento, o conceito correspondente e a mensagem 'Aprovado' se o conceito for A, B ou C, e
+        //'Reprovado' se o conceito for D ou E.
+        //Média de aproveitamento Conceito
+        //>= 90 A
+        //>= 75 e < 90 B
+        //>= 60 e < 75 C
+        //>= 40 e < 60 D
+        //< 40 E
+
+        var numAluno = Number(prompt("Insira o número do aluno: "))
+        var nota1 = Number.parseFloat(prompt("Insira a primeira nota: "))
+        var exercicio1 = Number(prompt("insira a qauntidade de questões da prova: "))
+        var nota2 = Number.parseFloat(prompt("Insira a swgunda nota: "))
+        var exercicio2 = Number(prompt("insira a qauntidade de questões da prova: "))
+        var nota3 = Number.parseFloat(prompt("Insira a tereira nota: "))
+        var exercicio3 = Number(prompt("insira a qauntidade de questões da prova: "))
+        var media = (nota1 + nota2 * 2 + nota3 * 3 + mediaExercicios)/7
+        var mediaExercicios = (exercicio1 + exercicio2 + exercicio3) / 3
+        
+        document.write("Número do aluno: " + numAluno + "º")
+        document.write("<br>")
+        document.write("------------------------------------")
+        document.write("<br>")
+        document.write("Primeira nota: " + nota1)
+        document.write("<br>")
+        document.write("------------------------------------")
+        document.write("<br>")
+        document.write("Segunda nota: " + nota2)
+        document.write("<br>")
+        document.write("------------------------------------")
+        document.write("<br>")
+        document.write("Terceira nota: " + nota3)
+        document.write("<br>")
+        document.write("------------------------------------")
+        document.write("<br>")
+        document.write("Média de número de exercícios: " + mediaExercicios)
+        document.write("<br>")
+        document.write("------------------------------------")
+        document.write("<br>")
+        switch (media) {
+            case (media >= 90):
+                document.write("Sua média foi A.")
+                document.write("<br>")
+                document.write("Aprovado, parabéns!")
+                break;
+            case (media >= 75 ) (media < 90):
+                document.write("Sua média foi B.")
+                document.write("<br>")
+                document.write("Aprovado, parabéns!")
+                break;
+            case (media >= 60 )  (media < 75):
+                document.write("Sua média foi C.")
+                document.write("<br>")
+                document.write("Aprovado, parabéns!")
+                break;
+            case  (media >= 40)  (media < 60):
+                document.write("Sua média foi D.")
+                document.write("<br>")
+                document.write("Reprovado. Tente novamnete mais na próxima!")
+                break;
+            case  (media < 40):
+                document.write("Sua média foi E.")
+                document.write("<br>")
+                document.write("Reprovado. Tente novamnete mais na próxima!")
+        }
+    </script>
+</body>
+</html>
+
